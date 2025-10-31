@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chandraprakash Jha - Data Quality Engineer specializing in SQL, Python, PySpark, and Databricks. Building reliable data validation frameworks for finance and subscription datasets.">
+    <meta name="keywords" content="data quality engineer, SQL, PySpark, Databricks, Python, Pandas, data engineering, analytics engineer, India, McAfee, data validation, ETL">
+    <meta name="author" content="Chandraprakash Jha">
+
+    <title>Chandraprakash Jha - Data Quality Engineer | SQL · Python · PySpark · Databricks</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">CP</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <!-- EDIT TEXT BELOW -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-in">
+                    <span class="badge-dot"></span>
+                    Available for immediate hire
+                </div>
+
+                <h1 class="hero-title animate-in">
+                    Hi, I'm <span class="name-highlight">Chandraprakash Jha</span>
+                </h1>
+
+                <div class="hero-subtitle animate-in">
+                    <span class="typing-text">I help teams trust their data</span>
+                    <span class="cursor">|</span>
+                </div>
+
+                <h2 class="hero-role animate-in">
+                    Data Quality Engineer — <span class="tech-stack">SQL · Python · Pandas · PySpark · Databricks</span>
+                </h2>
+
+                <p class="hero-description animate-in">
+                    I design and automate data validation for subscription, finance, and transaction datasets so reporting is right the first time.
+                </p>
+
+                <div class="hero-cta animate-in">
+                    <a href="resume.pdf" class="btn btn-primary" download>
+                        <span class="btn-icon">📄</span>
+                        Download Resume (PDF)
+                    </a>
+                    <a href="#contact" class="btn btn-secondary smooth-scroll">
+                        <span class="btn-icon">💼</span>
+                        Hire Me / Contact
+                    </a>
+                </div>
+
+                <!-- Animated Stats -->
+                <div class="hero-stats animate-in">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="30">0</div>
+                        <div class="stat-label">DQ Test Cases</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Companies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="99.9">0</div>
+                        <div class="stat-label">Data Accuracy %</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proof Panel with 3D Effect -->
+            <div class="proof-panel glass-card animate-in">
+                <div class="proof-header">
+                    <span class="proof-icon">✓</span>
+                    <h3>Proof of Impact</h3>
+                </div>
+                <ul class="proof-list">
+                    <li class="proof-item">
+                        <span class="proof-bullet">►</span>
+                        <span>Built <strong>30+ DQ test cases</strong> (TC001–TC013 style) for finance_data_prod</span>
+                    </li>
+                    <li class="proof-item">
+                        <span class="proof-bullet">►</span>
+                        <span>Validated subscription/order data from <strong>PSE, EBIZ, Additional License</strong> in Databricks</span>
+                    </li>
+                    <li class="proof-item">
+                        <span class="proof-bullet">►</span>
+                        <span>Experience: <strong>McAfee, Elevate K12, WNS</strong></span>
+                    </li>
+                </ul>
+
+                <!-- Terminal-style code preview -->
+                <div class="terminal-preview">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="terminal-title">dq_validation.sql</span>
+                    </div>
+                    <div class="terminal-body">
+                        <code>
+SELECT COUNT(*) as failed_checks<br>
+FROM finance_data_prod.dq_silver<br>
+WHERE validation_status = 'FAIL'<br>
+<span class="code-comment">-- Result: 0 ✓</span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECRUITER STRIP -->
+    <!-- EDIT TEXT BELOW -->
+    <section class="recruiter-strip">
+        <div class="strip-container">
+            <div class="strip-item">
+                <span class="strip-label">Open to:</span>
+                <span class="strip-value">Data Quality Engineer · Data Engineer · Analytics Engineer</span>
+            </div>
+            <div class="strip-divider"></div>
+            <div class="strip-item">
+                <span class="strip-label">Location:</span>
+                <span class="strip-value">India (remote-friendly) 🌍</span>
+            </div>
+            <div class="strip-divider"></div>
+            <div class="strip-item">
+                <span class="strip-label">Notice:</span>
+                <span class="strip-value">Impacted by org restructuring (Oct 2025) — available immediately</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <!-- EDIT TEXT BELOW -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// About Me</span>
+                <h2 class="section-title">What Do I Actually Do?</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content glass-card">
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            <span class="highlight-text">I work on making data reliable</span> before it reaches reporting.
+                        </p>
+                        <p class="about-paragraph">
+                            I've worked on <code>finance_data_prod</code>, <code>bookings_silver</code>, <code>subscription/order pipelines</code>, and <strong>Databricks-based DQ views</strong>.
+                        </p>
+                        <p class="about-paragraph">
+                            I build validation suites driven from mapping docs and DQ checklists covering:
+                        </p>
+                        <ul class="about-checklist">
+                            <li>✓ Schema validation</li>
+                            <li>✓ PK/FK constraints</li>
+                            <li>✓ Enum values</li>
+                            <li>✓ Nullability checks</li>
+                            <li>✓ Timestamp validation</li>
+                        </ul>
+                        <p class="about-paragraph">
+                            <strong>Current focus:</strong> Becoming expert in SQL & Python, building synthetic banking datasets in Postgres to practice ETL and PySpark.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Animated Process Flow -->
+                <div class="process-flow glass-card">
+                    <h3 class="process-title">My Data Quality Process</h3>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h4>Understand Source</h4>
+                                <p>Analyze mapping docs & source systems</p>
+                            </div>
+                        </div>
+                        <div class="process-connector"></div>
+                        <div class="process-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h4>Derive DQ Checks</h4>
+                                <p>Schema, PK/FK, domain, pattern, range</p>
+                            </div>
+                        </div>
+                        <div class="process-connector"></div>
+                        <div class="process-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h4>Build Scripts</h4>
+                                <p>SQL/PySpark validation logic</p>
+                            </div>
+                        </div>
+                        <div class="process-connector"></div>
+                        <div class="process-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h4>Deploy & Track</h4>
+                                <p>Push to Databricks, maintain tracker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <!-- EDIT TEXT BELOW -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Technical Arsenal</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Core Data Stack -->
+                <div class="skill-category glass-card">
+                    <div class="category-icon">💾</div>
+                    <h3 class="category-title">Core Data Stack</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">PySpark</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">Advanced Joins</span>
+                        <span class="skill-tag">Window Functions</span>
+                        <span class="skill-tag">CTEs</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+
+                <!-- Data Quality & Governance -->
+                <div class="skill-category glass-card">
+                    <div class="category-icon">✅</div>
+                    <h3 class="category-title">Data Quality / Governance</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Great Expectations</span>
+                        <span class="skill-tag">Collibra</span>
+                        <span class="skill-tag">Custom DQ Scripts</span>
+                        <span class="skill-tag">DQ Validation Tracker</span>
+                        <span class="skill-tag">Schema Validation</span>
+                        <span class="skill-tag">Data Profiling</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="92"></div>
+                    </div>
+                </div>
+
+                <!-- Data Platforms & Databases -->
+                <div class="skill-category glass-card">
+                    <div class="category-icon">🗄️</div>
+                    <h3 class="category-title">Data Platforms / Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Delta Lake</span>
+                        <span class="skill-tag">Parquet</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Databricks Notebooks</span>
+                        <span class="skill-tag">Data Warehousing</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+
+                <!-- Dev & Ops -->
+                <div class="skill-category glass-card">
+                    <div class="category-icon">⚙️</div>
+                    <h3 class="category-title">Dev & Operations</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CLI</span>
+                        <span class="skill-tag">Windows Setup</span>
+                        <span class="skill-tag">CSV Ingestion</span>
+                        <span class="skill-tag">Synthetic Datasets</span>
+                        <span class="skill-tag">ETL Pipelines</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Skill Radar (Canvas) -->
+            <div class="skill-radar-container glass-card">
+                <h3 class="radar-title">Skill Proficiency Radar</h3>
+                <canvas id="skillRadar"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <!-- EDIT TEXT BELOW -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Portfolio</span>
+                <h2 class="section-title">Flagship Projects</h2>
+                <p class="section-subtitle">Case studies showing real-world impact and technical depth</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="data-quality">Data Quality</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="apps">Applications</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- PROJECT 1: Finance Data DQ Validation Framework -->
+                <div class="project-card glass-card" data-category="data-quality">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-header">
+                                <span class="project-number">01</span>
+                                <span class="project-status">Production</span>
+                            </div>
+                            <h3 class="project-title">Finance Data DQ Validation Framework</h3>
+                            <p class="project-context">📍 McAfee Finance Data Platform</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">Databricks</span>
+                                <span class="tech-badge">PySpark</span>
+                            </div>
+                            <button class="flip-card-btn">View Details →</button>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>❌ Problem</h4>
+                                    <p>Inconsistent subscription/order data from PSE, EBIZ, and Additional License sources causing downstream reporting failures</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✅ Solution</h4>
+                                    <p>Created comprehensive DQ views like <code>finance_data_prod.dq_silver.ebiz_transient_views_data_pq_distinct</code> with column-level checks driven by mapping documentation</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 Outcome</h4>
+                                    <p>Enabled downstream <code>finance_data_prod</code> and <code>bookings_silver</code> to trust <code>principal_subscription_id</code> with 99.9% accuracy</p>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn-link">View SQL</a>
+                                <a href="#" class="btn-link">Notebook</a>
+                            </div>
+                            <button class="flip-card-btn">← Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: Synthetic Bank -->
+                <div class="project-card glass-card" data-category="sql">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-header">
+                                <span class="project-number">02</span>
+                                <span class="project-status">Personal</span>
+                            </div>
+                            <h3 class="project-title">Synthetic Bank – Postgres Practice Environment</h3>
+                            <p class="project-context">📍 Personal Learning Project</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">CSV</span>
+                            </div>
+                            <button class="flip-card-btn">View Details →</button>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>❌ Problem</h4>
+                                    <p>Needed realistic banking environment to practice advanced SQL, Pandas, and PySpark without production access</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✅ Solution</h4>
+                                    <p>Built local Postgres DB from CSVs, fixed load errors (PK/unique constraint violations), created realistic schema with customers, accounts, transactions, loans</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 Outcome</h4>
+                                    <p>Fully functional practice environment for SQL interview prep, window functions, CTEs, and complex joins</p>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn-link">View Schema</a>
+                                <a href="#" class="btn-link">GitHub</a>
+                            </div>
+                            <button class="flip-card-btn">← Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: HealthPeDhyan -->
+                <div class="project-card glass-card" data-category="apps">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-header">
+                                <span class="project-number">03</span>
+                                <span class="project-status">Live</span>
+                            </div>
+                            <h3 class="project-title">HealthPeDhyan – Affiliate Platform</h3>
+                            <p class="project-context">📍 Side Project / E-commerce</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">GA4</span>
+                            </div>
+                            <button class="flip-card-btn">View Details →</button>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>❌ Problem</h4>
+                                    <p>Needed platform to list health products with specific filters (palm-oil-free, vegan, etc.) and track affiliate conversions</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✅ Solution</h4>
+                                    <p>Built frontend with product listing, tag filtering, GA4 click tracking, and Amazon/Flipkart affiliate integration</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 Outcome</h4>
+                                    <p>Live platform with analytics tracking and revenue generation through affiliate links</p>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn-link">Live Site</a>
+                                <a href="#" class="btn-link">GitHub</a>
+                            </div>
+                            <button class="flip-card-btn">← Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: SQL Interview Practice -->
+                <div class="project-card glass-card" data-category="sql">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-header">
+                                <span class="project-number">04</span>
+                                <span class="project-status">Practice</span>
+                            </div>
+                            <h3 class="project-title">SQL Interview Practice Sheet Generator</h3>
+                            <p class="project-context">📍 Interview Preparation</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">Python</span>
+                            </div>
+                            <button class="flip-card-btn">View Details →</button>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>❌ Problem</h4>
+                                    <p>Needed systematic way to practice advanced SQL topics like CTEs, window functions, ranking, gaps & islands</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✅ Solution</h4>
+                                    <p>Collected 100+ advanced SQL questions and mapped them to synthetic banking tables for hands-on practice</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 Outcome</h4>
+                                    <p>Comprehensive SQL practice repository covering all advanced interview topics with real-world data</p>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn-link">View Questions</a>
+                                <a href="#" class="btn-link">Solutions</a>
+                            </div>
+                            <button class="flip-card-btn">← Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 5: DQ Checklist Automation -->
+                <div class="project-card glass-card" data-category="data-quality">
+                    <div class="project-card-inner">
+                        <div class="project-front">
+                            <div class="project-header">
+                                <span class="project-number">05</span>
+                                <span class="project-status">Production</span>
+                            </div>
+                            <h3 class="project-title">DQ Checklist Automation (TC001–TC013)</h3>
+                            <p class="project-context">📍 McAfee Data Quality Team</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">PySpark</span>
+                                <span class="tech-badge">Excel</span>
+                            </div>
+                            <button class="flip-card-btn">View Details →</button>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <div class="detail-section">
+                                    <h4>❌ Problem</h4>
+                                    <p>Manual DQ validation was time-consuming and error-prone across multiple data sources</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>✅ Solution</h4>
+                                    <p>Automated schema checks, enum validation, PK uniqueness, timestamp validity, and source-to-target match with test cases TC001–TC013</p>
+                                </div>
+                                <div class="detail-section">
+                                    <h4>🎯 Outcome</h4>
+                                    <p>Reduced validation time by 80%, maintained comprehensive DQ_Validation_Tracker.xlsx for audit trail</p>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn-link">View Scripts</a>
+                                <a href="#" class="btn-link">Tracker</a>
+                            </div>
+                            <button class="flip-card-btn">← Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <!-- EDIT TEXT BELOW -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Career Timeline</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- McAfee -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <h3 class="timeline-title">Data Quality Engineer</h3>
+                        <div class="timeline-company">McAfee</div>
+                        <ul class="timeline-highlights">
+                            <li>Worked on <code>finance_data_prod</code> and <code>bookings_silver</code> pipelines</li>
+                            <li>Wrote SQL/PySpark validations for subscription/order data from PSE, EBIZ, Additional License</li>
+                            <li>Maintained <strong>DQ_Validation_Tracker.xlsx</strong> with 30+ test cases (TC001–TC013)</li>
+                            <li>Created Databricks DQ views for column-level validation driven by mapping docs</li>
+                            <li>Ensured <code>principal_subscription_id</code> consistency across data sources</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-badge-small">Databricks</span>
+                            <span class="tech-badge-small">PySpark</span>
+                            <span class="tech-badge-small">SQL</span>
+                            <span class="tech-badge-small">Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elevate K12 -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2024</div>
+                        <h3 class="timeline-title">Data / Reporting Analyst</h3>
+                        <div class="timeline-company">Elevate K12</div>
+                        <ul class="timeline-highlights">
+                            <li>Report validation and automated data quality checks</li>
+                            <li>Built dashboards for stakeholder reporting</li>
+                            <li>Implemented ETL pipelines for educational data</li>
+                            <li>Collaborated with cross-functional teams to define data requirements</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-badge-small">SQL</span>
+                            <span class="tech-badge-small">Python</span>
+                            <span class="tech-badge-small">Excel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WNS -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h3 class="timeline-title">Analytics / Operations Associate</h3>
+                        <div class="timeline-company">WNS</div>
+                        <ul class="timeline-highlights">
+                            <li>Data cleaning and transformation for client reporting</li>
+                            <li>ETL pipeline development and maintenance</li>
+                            <li>Stakeholder reporting and dashboard creation</li>
+                            <li>Process optimization and automation</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-badge-small">SQL</span>
+                            <span class="tech-badge-small">Excel</span>
+                            <span class="tech-badge-small">VBA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW I WORK SECTION -->
+    <!-- EDIT TEXT BELOW -->
+    <section id="how-i-work" class="how-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// My Methodology</span>
+                <h2 class="section-title">How I Work</h2>
+                <p class="section-subtitle">A systematic approach to data quality</p>
+            </div>
+
+            <div class="workflow-steps">
+                <div class="workflow-step glass-card">
+                    <div class="step-icon">📋</div>
+                    <h3 class="step-title">1. Understand Source & Mapping Doc</h3>
+                    <p class="step-description">Analyze source systems, data models, and mapping documentation to understand data flow and business logic</p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step glass-card">
+                    <div class="step-icon">🔍</div>
+                    <h3 class="step-title">2. Derive DQ Checks</h3>
+                    <p class="step-description">Define validation rules: schema, PK/FK, domain values, patterns, ranges, and business rules</p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step glass-card">
+                    <div class="step-icon">⚡</div>
+                    <h3 class="step-title">3. Build SQL/PySpark Scripts</h3>
+                    <p class="step-description">Implement validation logic using SQL queries and PySpark transformations for scalability</p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step glass-card">
+                    <div class="step-icon">🚀</div>
+                    <h3 class="step-title">4. Push to Databricks / Postgres</h3>
+                    <p class="step-description">Deploy validation scripts to production environment and schedule regular runs</p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step glass-card">
+                    <div class="step-icon">📊</div>
+                    <h3 class="step-title">5. Track in DQ_Validation_Tracker</h3>
+                    <p class="step-description">Maintain comprehensive tracker with test cases, results, and audit trail for compliance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF / HIRING CTA -->
+    <!-- EDIT TEXT BELOW -->
+    <section class="hiring-cta-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Let's Collaborate</span>
+                <h2 class="section-title">Let's Work Together</h2>
+            </div>
+
+            <div class="cta-grid">
+                <div class="cta-card glass-card">
+                    <div class="cta-icon">💰</div>
+                    <h3 class="cta-title">Finance / Subscription Data</h3>
+                    <p class="cta-description">Need someone to validate your finance, subscription, or transaction data pipelines?</p>
+                    <a href="#contact" class="btn btn-secondary smooth-scroll">Email Me</a>
+                </div>
+
+                <div class="cta-card glass-card">
+                    <div class="cta-icon">🔧</div>
+                    <h3 class="cta-title">ETL Hardening</h3>
+                    <p class="cta-description">Need a SQL/PySpark person to harden your ETL pipelines with comprehensive DQ checks?</p>
+                    <a href="#contact" class="btn btn-secondary smooth-scroll">Book a Call</a>
+                </div>
+
+                <div class="cta-card glass-card">
+                    <div class="cta-icon">📝</div>
+                    <h3 class="cta-title">DQ Scripts & Mapping</h3>
+                    <p class="cta-description">Need DQ scripts mapped to your source-of-truth documentation and compliance requirements?</p>
+                    <a href="#contact" class="btn btn-secondary smooth-scroll">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <!-- EDIT TEXT BELOW -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Available immediately for Data Quality / Data Engineering roles</p>
+            </div>
+
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper glass-card">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@company.com">
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your data quality needs..."></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">📨</span>
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="formSuccess" class="form-success hidden">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent!</h3>
+                        <p>Thanks for reaching out. I'll get back to you soon.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:chandraprakash.jha@example.com">chandraprakash.jha@example.com</a>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/your-profile" target="_blank">Connect on LinkedIn</a>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">💻</div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/your-username" target="_blank">View my repositories</a>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>India (Remote-friendly)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Chandraprakash Jha. Built with passion for data quality.</p>
+                <p class="footer-note">Designed to help teams trust their data 📊</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top hidden" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
