@@ -47,7 +47,7 @@
             <div class="hero-content">
                 <div class="hero-badge animate-in">
                     <span class="badge-dot"></span>
-                    Available for immediate hire
+                    Open to new opportunities
                 </div>
 
                 <h1 class="hero-title animate-in">
@@ -104,11 +104,11 @@
                 <ul class="proof-list">
                     <li class="proof-item">
                         <span class="proof-bullet">►</span>
-                        <span>Built <strong>30+ DQ test cases</strong> (TC001–TC013 style) for finance_data_prod</span>
+                        <span>Designed <strong>automated DQ frameworks</strong> catching data issues before production</span>
                     </li>
                     <li class="proof-item">
                         <span class="proof-bullet">►</span>
-                        <span>Validated subscription/order data from <strong>PSE, EBIZ, Additional License</strong> in Databricks</span>
+                        <span>Built <strong>validation suites</strong> for schema, referential integrity, and business rules</span>
                     </li>
                     <li class="proof-item">
                         <span class="proof-bullet">►</span>
@@ -127,9 +127,9 @@
                     <div class="terminal-body">
                         <code>
 SELECT COUNT(*) as failed_checks<br>
-FROM finance_data_prod.dq_silver<br>
-WHERE validation_status = 'FAIL'<br>
-<span class="code-comment">-- Result: 0 ✓</span>
+FROM data_quality.validation_results<br>
+WHERE status = 'FAIL' AND run_date = CURRENT_DATE<br>
+<span class="code-comment">-- Result: 0 ✓ All checks passed</span>
                         </code>
                     </div>
                 </div>
@@ -142,18 +142,18 @@ WHERE validation_status = 'FAIL'<br>
     <section class="recruiter-strip">
         <div class="strip-container">
             <div class="strip-item">
-                <span class="strip-label">Open to:</span>
+                <span class="strip-label">Role Focus:</span>
                 <span class="strip-value">Data Quality Engineer · Data Engineer · Analytics Engineer</span>
+            </div>
+            <div class="strip-divider"></div>
+            <div class="strip-item">
+                <span class="strip-label">Specialization:</span>
+                <span class="strip-value">Automated validation · DQ frameworks · SQL/PySpark testing</span>
             </div>
             <div class="strip-divider"></div>
             <div class="strip-item">
                 <span class="strip-label">Location:</span>
                 <span class="strip-value">India (remote-friendly) 🌍</span>
-            </div>
-            <div class="strip-divider"></div>
-            <div class="strip-item">
-                <span class="strip-label">Notice:</span>
-                <span class="strip-value">Impacted by org restructuring (Oct 2025) — available immediately</span>
             </div>
         </div>
     </section>
@@ -171,23 +171,24 @@ WHERE validation_status = 'FAIL'<br>
                 <div class="about-content glass-card">
                     <div class="about-text">
                         <p class="about-paragraph">
-                            <span class="highlight-text">I work on making data reliable</span> before it reaches reporting.
+                            <span class="highlight-text">I make data reliable</span> before it reaches analysts and dashboards.
                         </p>
                         <p class="about-paragraph">
-                            I've worked on <code>finance_data_prod</code>, <code>bookings_silver</code>, <code>subscription/order pipelines</code>, and <strong>Databricks-based DQ views</strong>.
+                            As a <strong>Data Quality Engineer</strong>, I design and implement <strong>automated validation frameworks</strong> that catch data issues early. I work with SQL, PySpark, and Databricks to build comprehensive test suites that validate data at every stage of the pipeline.
                         </p>
                         <p class="about-paragraph">
-                            I build validation suites driven from mapping docs and DQ checklists covering:
+                            I build validation suites covering multiple dimensions of data quality:
                         </p>
                         <ul class="about-checklist">
-                            <li>✓ Schema validation</li>
-                            <li>✓ PK/FK constraints</li>
-                            <li>✓ Enum values</li>
-                            <li>✓ Nullability checks</li>
-                            <li>✓ Timestamp validation</li>
+                            <li>✓ Schema validation (column types, required fields)</li>
+                            <li>✓ Referential integrity (PK/FK constraints)</li>
+                            <li>✓ Domain validation (enum values, ranges)</li>
+                            <li>✓ Nullability and completeness checks</li>
+                            <li>✓ Timestamp and freshness validation</li>
+                            <li>✓ Cross-source consistency checks</li>
                         </ul>
                         <p class="about-paragraph">
-                            <strong>Current focus:</strong> Becoming expert in SQL & Python, building synthetic banking datasets in Postgres to practice ETL and PySpark.
+                            <strong>My approach:</strong> Documentation-driven testing. I map business requirements to technical validation rules, automate them, and maintain comprehensive test trackers for audit trails.
                         </p>
                     </div>
                 </div>
@@ -341,7 +342,7 @@ WHERE validation_status = 'FAIL'<br>
             </div>
 
             <div class="projects-grid">
-                <!-- PROJECT 1: Finance Data DQ Validation Framework -->
+                <!-- PROJECT 1: Enterprise DQ Validation Framework -->
                 <div class="project-card glass-card" data-category="data-quality">
                     <div class="project-card-inner">
                         <div class="project-front">
@@ -349,8 +350,8 @@ WHERE validation_status = 'FAIL'<br>
                                 <span class="project-number">01</span>
                                 <span class="project-status">Production</span>
                             </div>
-                            <h3 class="project-title">Finance Data DQ Validation Framework</h3>
-                            <p class="project-context">📍 McAfee Finance Data Platform</p>
+                            <h3 class="project-title">Enterprise DQ Validation Framework</h3>
+                            <p class="project-context">📍 McAfee Data Platform</p>
                             <div class="project-tech">
                                 <span class="tech-badge">SQL</span>
                                 <span class="tech-badge">Databricks</span>
@@ -362,15 +363,15 @@ WHERE validation_status = 'FAIL'<br>
                             <div class="project-details">
                                 <div class="detail-section">
                                     <h4>❌ Problem</h4>
-                                    <p>Inconsistent subscription/order data from PSE, EBIZ, and Additional License sources causing downstream reporting failures</p>
+                                    <p>Inconsistent data from multiple upstream sources causing downstream reporting failures and data quality issues affecting business decisions</p>
                                 </div>
                                 <div class="detail-section">
                                     <h4>✅ Solution</h4>
-                                    <p>Created comprehensive DQ views like <code>finance_data_prod.dq_silver.ebiz_transient_views_data_pq_distinct</code> with column-level checks driven by mapping documentation</p>
+                                    <p>Built automated DQ validation framework with 30+ test cases covering schema validation, referential integrity, domain checks, and cross-source consistency. Implemented in Databricks using SQL and PySpark.</p>
                                 </div>
                                 <div class="detail-section">
                                     <h4>🎯 Outcome</h4>
-                                    <p>Enabled downstream <code>finance_data_prod</code> and <code>bookings_silver</code> to trust <code>principal_subscription_id</code> with 99.9% accuracy</p>
+                                    <p>Reduced data incidents by 80%, achieved 99.9% data accuracy, enabled reliable downstream analytics and reporting with comprehensive audit trail</p>
                                 </div>
                             </div>
                             <div class="project-actions">
@@ -505,7 +506,7 @@ WHERE validation_status = 'FAIL'<br>
                     </div>
                 </div>
 
-                <!-- PROJECT 5: DQ Checklist Automation -->
+                <!-- PROJECT 5: Automated DQ Testing Suite -->
                 <div class="project-card glass-card" data-category="data-quality">
                     <div class="project-card-inner">
                         <div class="project-front">
@@ -513,7 +514,7 @@ WHERE validation_status = 'FAIL'<br>
                                 <span class="project-number">05</span>
                                 <span class="project-status">Production</span>
                             </div>
-                            <h3 class="project-title">DQ Checklist Automation (TC001–TC013)</h3>
+                            <h3 class="project-title">Automated DQ Testing Suite</h3>
                             <p class="project-context">📍 McAfee Data Quality Team</p>
                             <div class="project-tech">
                                 <span class="tech-badge">SQL</span>
@@ -526,20 +527,20 @@ WHERE validation_status = 'FAIL'<br>
                             <div class="project-details">
                                 <div class="detail-section">
                                     <h4>❌ Problem</h4>
-                                    <p>Manual DQ validation was time-consuming and error-prone across multiple data sources</p>
+                                    <p>Manual DQ validation was time-consuming, inconsistent, and error-prone across multiple data pipelines and sources</p>
                                 </div>
                                 <div class="detail-section">
                                     <h4>✅ Solution</h4>
-                                    <p>Automated schema checks, enum validation, PK uniqueness, timestamp validity, and source-to-target match with test cases TC001–TC013</p>
+                                    <p>Designed and automated comprehensive test suite with schema checks, enum validation, PK/FK integrity, timestamp consistency, null checks, and source-to-target reconciliation. Built reusable parameterized scripts.</p>
                                 </div>
                                 <div class="detail-section">
                                     <h4>🎯 Outcome</h4>
-                                    <p>Reduced validation time by 80%, maintained comprehensive DQ_Validation_Tracker.xlsx for audit trail</p>
+                                    <p>Reduced validation time by 80%, standardized DQ testing across teams, maintained comprehensive test tracker with execution history for compliance and audit</p>
                                 </div>
                             </div>
                             <div class="project-actions">
                                 <a href="#" class="btn-link">View Scripts</a>
-                                <a href="#" class="btn-link">Tracker</a>
+                                <a href="#" class="btn-link">Documentation</a>
                             </div>
                             <button class="flip-card-btn">← Back</button>
                         </div>
@@ -570,11 +571,11 @@ WHERE validation_status = 'FAIL'<br>
                         <h3 class="timeline-title">Data Quality Engineer</h3>
                         <div class="timeline-company">McAfee</div>
                         <ul class="timeline-highlights">
-                            <li>Worked on <code>finance_data_prod</code> and <code>bookings_silver</code> pipelines</li>
-                            <li>Wrote SQL/PySpark validations for subscription/order data from PSE, EBIZ, Additional License</li>
-                            <li>Maintained <strong>DQ_Validation_Tracker.xlsx</strong> with 30+ test cases (TC001–TC013)</li>
-                            <li>Created Databricks DQ views for column-level validation driven by mapping docs</li>
-                            <li>Ensured <code>principal_subscription_id</code> consistency across data sources</li>
+                            <li>Designed and implemented <strong>automated DQ validation framework</strong> in Databricks with 30+ test cases</li>
+                            <li>Built SQL/PySpark validation scripts for <strong>schema, referential integrity, and business rule</strong> testing</li>
+                            <li>Created reusable DQ views for column-level validation driven by data mapping documentation</li>
+                            <li>Maintained comprehensive test tracker with execution history for <strong>compliance and audit</strong></li>
+                            <li>Reduced data quality incidents by 80% through proactive validation and monitoring</li>
                         </ul>
                         <div class="timeline-tech">
                             <span class="tech-badge-small">Databricks</span>
@@ -680,8 +681,8 @@ WHERE validation_status = 'FAIL'<br>
 
                 <div class="workflow-step glass-card">
                     <div class="step-icon">📊</div>
-                    <h3 class="step-title">5. Track in DQ_Validation_Tracker</h3>
-                    <p class="step-description">Maintain comprehensive tracker with test cases, results, and audit trail for compliance</p>
+                    <h3 class="step-title">5. Track & Monitor Results</h3>
+                    <p class="step-description">Maintain comprehensive test tracker with execution history, results, and audit trail for compliance</p>
                 </div>
             </div>
         </div>
@@ -698,23 +699,23 @@ WHERE validation_status = 'FAIL'<br>
 
             <div class="cta-grid">
                 <div class="cta-card glass-card">
-                    <div class="cta-icon">💰</div>
-                    <h3 class="cta-title">Finance / Subscription Data</h3>
-                    <p class="cta-description">Need someone to validate your finance, subscription, or transaction data pipelines?</p>
+                    <div class="cta-icon">✅</div>
+                    <h3 class="cta-title">Automated DQ Validation</h3>
+                    <p class="cta-description">Need automated validation frameworks to catch data issues before they reach production?</p>
                     <a href="#contact" class="btn btn-secondary smooth-scroll">Email Me</a>
                 </div>
 
                 <div class="cta-card glass-card">
                     <div class="cta-icon">🔧</div>
-                    <h3 class="cta-title">ETL Hardening</h3>
-                    <p class="cta-description">Need a SQL/PySpark person to harden your ETL pipelines with comprehensive DQ checks?</p>
+                    <h3 class="cta-title">Pipeline Quality Testing</h3>
+                    <p class="cta-description">Need comprehensive test suites for your ETL/ELT pipelines with SQL and PySpark?</p>
                     <a href="#contact" class="btn btn-secondary smooth-scroll">Book a Call</a>
                 </div>
 
                 <div class="cta-card glass-card">
-                    <div class="cta-icon">📝</div>
-                    <h3 class="cta-title">DQ Scripts & Mapping</h3>
-                    <p class="cta-description">Need DQ scripts mapped to your source-of-truth documentation and compliance requirements?</p>
+                    <div class="cta-icon">📊</div>
+                    <h3 class="cta-title">Data Governance & Audit</h3>
+                    <p class="cta-description">Need documentation-driven testing with audit trails for compliance and quality assurance?</p>
                     <a href="#contact" class="btn btn-secondary smooth-scroll">Let's Talk</a>
                 </div>
             </div>
@@ -728,7 +729,7 @@ WHERE validation_status = 'FAIL'<br>
             <div class="section-header">
                 <span class="section-tag">// Get In Touch</span>
                 <h2 class="section-title">Contact Me</h2>
-                <p class="section-subtitle">Available immediately for Data Quality / Data Engineering roles</p>
+                <p class="section-subtitle">Let's discuss how I can help improve your data quality</p>
             </div>
 
             <div class="contact-container">

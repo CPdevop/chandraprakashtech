@@ -704,7 +704,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show welcome toast
     setTimeout(() => {
-        showToast('👋 Welcome! I\'m available for immediate hire.', 'success');
+        showToast('👋 Welcome! Explore my Data Quality Engineering portfolio.', 'success');
     }, 1000);
 });
 
